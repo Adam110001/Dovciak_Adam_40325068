@@ -143,18 +143,17 @@ int main(){
     return 0;
 }
 
-void print(char ch[3][3]) {
+void print(char board[3][3]) {
     
     printf("\n");
-    int i,j;
     
     printf("%s (X) - %s (0)\n",strPlayer1,strPlayer2);
     
     printf("\n");
     
-    for(i=0;i<3;i++) {
-        for(j=0;j<3;j++)
-            printf("%c  ",ch[i][j]);
+    for (int i=0;i<3;i++) {
+        for (int j=0;j<3;j++)
+            printf("%c  ",board[i][j]);
         printf("\n\n");
     }
 }
